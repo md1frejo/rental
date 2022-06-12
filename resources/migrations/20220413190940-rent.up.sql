@@ -1,0 +1,15 @@
+CREATE TABLE rent
+(id INTEGER PRIMARY KEY,
+ name TEXT,
+ org INTEGER,
+ parea INTEGER,
+ barea INTEGER,
+ tarea INTEGER,
+ hyra FLOAT,
+ omk FLOAT,
+ tid INTEGER,
+ start INTEGER,
+ stop INTEGER,
+ notes TEXT,
+ kost FLOAT,
+ kost2 FLOAT);

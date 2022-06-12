@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+{% style "/assets/bulma/css/bulma.min.css" %}
+{% style "/assets/material-icons/css/material-icons.min.css" %}
+{% style """/css/styles.css" %}
+
+<html> <head>
+<title>btable.html</title>
+</head>
+  <body>
+
+<div class="tabs is-centered">
+  <ul>
+    <li><a href="/btable/stora salen/166/187">stora salen</a></li>
+    <li><a href="/btable/studio/92/103">studio</a></li>
+    <li><a href="/btable/cafe/55/62">cafe</a></li>
+    <li><a href="/btable/atelje/15/17">atelje</a></li>
+    <li><a href="/btable/källare 1/42/47">källare 1</a></li>
+    <li><a href="/btable/källare 2/23/26">källare 2</a></li>
+  </ul>
+</div>
+
+{% include "block.html" block %}
+<a href="/">home</a>
+<h2>{{name}}</h2>
+
+<div class="columns">
+<div class="column">
+</div>
+<div column>
+  <table class="table">
+    <thead>
+      <tr>
+      <th><abbr title="senaste">senaste</abbr></th>
+      <th><abbr title="namn">namn</abbr></th>
+      <th><abbr title="org">org</abbr></th>
+      <th><abbr title="area">area</abbr></th>
+      <th><abbr title="area2">area2</abbr></th>
+      <th><abbr title="hyra">hyra</abbr></th>
+      <th><abbr title="omkostnad">omkostnad</abbr></th>
+      <th><abbr title="start">börjar</abbr></th>
+      <th><abbr title="stop">slutar</abbr></th>
+      <th><abbr title="tid">tid</abbr></th>
+      <th><abbr title="kostnad">kostnad</abbr></th>
+      <th><abbr title="total kostnad">total kostnad</abbr></th>
+      <th><abbr title="noteringar">noteringar</abbr></th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th><abbr title="id">id</abbr></th>
+      <th><abbr title="namn">namn</abbr></th>
+      <th><abbr title="org">org</abbr></th>
+      <th><abbr title="area">area</abbr></th>
+      <th><abbr title="area2">area2</abbr></th>
+      <th><abbr title="hyra">hyra</abbr></th>
+      <th><abbr title="omkostnad">omkostnad</abbr></th>
+      <th><abbr title="start">börjar</abbr></th>
+      <th><abbr title="stop">slutar</abbr></th>
+      <th><abbr title="tid">tid</abbr></th>
+      <th><abbr title="kostnad">kostnad</abbr></th>
+      <th><abbr title="total kostnad">total kostnad</abbr></th>
+      <th><abbr title="noteringar">noteringar</abbr></th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <form action="/test">
+      <button class="button is-small is-link is-light">test</button>
+      <input class="input" type="text" name="name" value="jonas" />
+      <input class="input" type="text" name="org" value="ok" />
+      <input class="input" type="text" name="barea" value="13" />
+      <input class="input" type="text" name="parea" value="13" />
+      <input class="input" type="text" name="tarea" value="13" />
+      <input class="input" type="text" name="hyra" value="13" />
+      <input class="input" type="text" name="omk" value="212" />
+      <input class="input" type="text" name="tid" value="13" />
+      <input class="input" type="text" name="start" value="13" />
+      <input class="input" type="text" name="stop" value="13" />
+      <input class="input" type="text" name="notes" value="ewwe" />
+      <input class="input" type="text" name="kost" value="13" />
+      <input class="input" type="text" name="kost2" value="13" />
+      </form>
+      <td> {{latest.id}}</td>
+      <td> {{latest.name|default-if-empty:"?"}} </td>
+      <td> {{latest.org|default-if-empty:"?"}} </td>
+      <td> {{latest.parea}} </td>
+      <td> {{latest.barea}} </td>
+      <td> {{latest.hyra}} </td>
+      <td> {{latest.omk}} </td>
+      <td> {{latest.start|default-if-empty:"?"}} </td>
+      <td> {{latest.stop|default-if-empty:"?"}} </td>
+      <td> {{latest.tid}} </td>
+      <td> {{latest.kost|double-format}} </td>
+      <td> {{latest.kost2|double-format}} </td>
+      <td> {{latest.notes|default-if-empty:"?"}} </td>
+    </tr>
+    {% for k in old %}
+    <tr>
+      <td> {{k.id}} </td>
+      <td> {{k.name}} </td>
+      <td> {{k.org}} </td>
+      <td> {{k.parea}} </td>
+      <td> {{k.barea}} </td>
+      <td> {{k.hyra}} </td>
+      <td> {{k.omk}} </td>
+      <td> {{k.start}} </td>
+      <td> {{k.stop}} </td>
+      <td> {{k.tid}} </td>
+      <td> {{k.kost|double-format}} </td>
+      <td> {{k.kost2|double-format}} </td>
+      <td> {{k.notes}} </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="column">
+</div>
+</div>
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Sun Jun 12 15:40:05 CEST 2022 <!-- hhmts end -->
+</body> </html>
+

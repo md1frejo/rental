@@ -1,0 +1,15 @@
+        <tr>
+      <th><abbr title="sparade">sparade</abbr></th>
+      <th><abbr title="namn">namn</abbr></th>
+      <th><abbr title="org">org</abbr></th>
+      <th><abbr title="area">area</abbr></th>
+      <th><abbr title="area2">area2</abbr></th>
+      <th><abbr title="hyra">hyra</abbr></th>
+      <th><abbr title="omkostnad">omkostnad</abbr></th>
+      <th><abbr title="start">börjar</abbr></th>
+      <th><abbr title="stop">slutar</abbr></th>
+      <th><abbr title="tid">tid</abbr></th>
+      <th><abbr title="kostnad">kostnad</abbr></th>
+      <th><abbr title="total kostnad">total kostnad</abbr></th>
+      <th><abbr title="noteringar">noteringar</abbr></th>
+    </tr>

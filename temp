@@ -1,0 +1,21 @@
+CREATE TABLE rent
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+ name TEXT,
+ org INTEGER,
+ parea INTEGER,
+ barea INTEGER,
+ tarea INTEGER,
+ hyra FLOAT,
+ omk FLOAT,
+ tid INTEGER,
+ start INTEGER,
+ stop INTEGER,
+ notes TEXT,
+ kost FLOAT,
+ kost2 FLOAT);
+
+create table misc
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+ pname TEXT,
+ org INTEGER,
+ pay FLOAT);

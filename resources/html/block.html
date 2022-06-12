@@ -1,0 +1,79 @@
+{% style "/assets/bulma/css/bulma.min.css" %}
+{% style "/assets/material-icons/css/material-icons.min.css" %}
+{% style """/css/styles.css" %}
+
+<form action="/btable/1/1/1">
+<div class="columns">
+<div class="column is-1 has-background-grey-light-light">
+  <form action="/btable/1/1/1">
+  <button class="button is-small is-link is-light">beräkna</button>
+  </form>
+  <form action="/btable/1/1/1/1/0">
+  <button class="button is-small is-link is-light">pdf</button>
+  </form>
+  <form action="/delete"
+  <button class="button is-small is-link is-light">radera</button>
+  <input class="input is-small" type="text" name="id"/>
+  </form>
+  <form method="post" action="/save">
+  <button class="button is-small is-link is-light">spara</button>
+  <input class="input is-small" type="text"/>
+  </form>
+  </div>
+  <div class="column is-2">
+    <span class="tag is-primary is-light">namn/org</span>
+    <input class="input is-small" type="text" name="name" value="namn?" placeholder="namn?">
+    <input class="input is-small" type="text" name="org" value="9999" placeholder="9999">
+  </div>
+  <div class="column  is-1">
+    <div class="block">
+      <div class="control">
+	<!-- <label class="label">block</label> -->
+	<span class="tag is-primary is-light">{{latest.block}}</span>
+	<input class="input is-small" type="text" name="barea" value={{latest.area1}}>
+	<p class="help">ändra?</p>
+      </div>
+    </div>
+  </div>
+  <div class="column is-1">
+    <div class="block">
+    <div class="control">
+      <span class="tag is-primary is-light">mer area</span>
+      <input class="input is-small" type="text" name="parea" value={{latest.area2}}>
+	<p class="help">ändra?</p>
+      </div>
+    </div>
+  </div>
+    <div class="column is-1">
+	<div class="block">
+	<div class="control">
+	  <span class="tag is-primary is-light">totalt timmar</span>
+	  <input class="input is-small" type="text" name="tid" value={{latest.tid}}>
+	    <p class="help">normalt: 8</p>
+	  </div>
+	</div>
+	</div>
+	<div class="column  is-1">
+	  <span class="tag is-primary is-light">datum</span>
+	  <input class="button is-small is-info is-light" type="date" name="start" value="start">
+	  <input class="button is-small is-warning is-light" type="date" name="stop" value="Submit input">
+	</div>
+    <div class="column is-1" color="blue">
+    <div class="control">
+      <span class="tag is-primary is-danger is-light">pris/timma</span>
+      <p><span class="tag is-info is-light">{{totk}}</span></p>
+      <span class="tag is-primary is-danger is-light">total kostnad</span>
+      <p><span class="tag is-info is-light">{{totk2}}</span></p>
+
+      </div>
+      </div>
+       	<div class="column is-3">
+	<div class="block">
+	<div class="control">
+	  <span class="tag is-primary is-light">noteringar</span>
+	  <textarea class="textarea is-link" name="notes" placeholder="Link textarea"></textarea>
+	    <p class="help">extra: 8</p>
+	  </div>
+	</div>
+  </div>
+</div>

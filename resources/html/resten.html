@@ -1,0 +1,104 @@
+{% style "/assets/bulma/css/bulma.min.css" %}
+{% style "/assets/material-icons/css/material-icons.min.css" %}
+{% style """/css/styles.css" %}
+
+<form  action="/btable">
+<div class="columns">
+<div class="column is-1 has-background-grey-lighter">
+  <form action="/btable">
+    <button class="button is-primary">beräkna</button>
+    <form action="/add">
+  <button class="button is-dark">add</button>
+    </form>
+  </form>
+  <form action="/delete">
+  <input class="input is-small" type="text" name="id" placeholder="delete id">
+  <button class="button is-dark">delete</button>
+  </form>
+  </div>
+  <div class="column is-1 has-background-info-light">
+    <span class="tag is-primary is-light">namn</span>
+    <input class="input is-small" type="text" name="name" value="namn?" placeholder="namn?">
+    <span class="tag is-primary is-light">namn</span>
+    <input class="input is-small" type="text" name="name2" value="namn?" placeholder="namn?">
+  </div>
+    <div class="column is-1 has-background-info-light">
+    <span class="tag is-primary is-light">organisation</span>
+    <input class="input is-small" type="text" name="org" value="9999" placeholder="9999">
+    <span class="tag is-primary is-light">organisation</span>
+    <input class="input is-small" type="text" name="org2" value="9999" placeholder="9999">
+  </div>
+  <div class="column  is-1">
+    <div class="block">
+      <div class="control">
+	<!-- <label class="label">block</label> -->
+	<span class="tag is-primary is-light">stora salen</span>
+	<input class="input is-small" type="text" name="barea" value="166">
+	<span class="tag is-primary is-light">lilla salen</span>
+	<input class="input is-small" type="text" name="barea2" value="166">
+	<p class="help">ändra?</p>
+      </div>
+    </div>
+  </div>
+  <div class="column is-1">
+    <div class="block">
+    <div class="control">
+      <span class="tag is-primary is-light">mer area</span>
+      <input class="input is-small" type="text" name="parea" value="187">
+      <span class="tag is-primary is-light">mer area</span>
+      <input class="input is-small" type="text" name="parea2" value="187">
+	<p class="help">ändra?</p>
+      </div>
+    </div>
+  </div>
+    <div class="column is-1">
+	<div class="block">
+	<div class="control">
+	  <span class="tag is-primary is-light">tid</span>
+	  <input class="input is-small" type="text" name="tid" value="1">
+	  <span class="tag is-primary is-light">tid</span>
+	    <input class="input is-small" type="text" name="tid" value="1">
+	    <p class="help">normalt: 8</p>
+	  </div>
+	</div>
+	</div>
+	<div class="column  is-1">
+	  <span class="tag is-primary is-light">datum</span>
+	  <input class="button is-small is-info is-light" type="date" name="start" value="start">
+	  <input class="button is-small is-warning is-light" type="date" name="stop" value="Submit input">
+	  <span class="tag is-primary is-light">datum</span>
+	<input class="button is-small is-info is-light" type="date" name="start2" value="Submit input">
+	<input class="button is-small is-warning is-light" type="date" name="stop2" value="Submit input">
+	</div>
+  <div class="column  is-1">
+    <div class="block">
+    <div class="control">
+      <span class="tag is-primary is-info is-light">hyra</span>
+      <input class="input is-small" type="text" name="hyra" value="61000">
+      <span class="tag is-primary is-info is-light">total area</span>
+      <input class="input is-small" type="text" name="tarea" value="980">
+      <span class="tag is-primary is-info is-light">omkostnad</span>
+      <input class="input is-small" type="text" name="omk" value="53000">
+	<p class="help">ändra?</p>
+      </div>
+    </div>
+    </div>
+    <div class="column is-1" color="blue">
+    <div class="control">
+      <span class="tag is-primary is-danger is-light">pris/timma</span>
+      <p><span class="tag is-info is-light">{{totk}}</span></p>
+      <span class="tag is-primary is-danger is-light">total kostnad</span>
+      <p><span class="tag is-info is-light">{{totk2}}</span></p>
+
+      </div>
+      </div>
+      	<div class="column is-2">
+	<div class="block">
+	<div class="control">
+	  <span class="tag is-primary is-light">noteringar</span>
+	  <textarea class="textarea is-link" name="notes" placeholder="Link textarea"></textarea>
+	    <p class="help">extra: 8</p>
+	  </div>
+	</div>
+  </div>
+</div>
